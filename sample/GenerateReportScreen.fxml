@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="657.0" prefWidth="985.0" style="-fx-background-color: lightBlue;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.GenerateReportScreenController">
+   <children>
+      <Label fx:id="AppointmentLogo" layoutX="379.0" layoutY="24.0" prefHeight="53.0" prefWidth="267.0" text="Genreate Reports" textFill="BLUE">
+         <font>
+            <Font name="Imprint MT Shadow" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="WguLogo" layoutX="24.0" layoutY="24.0" text="WGU">
+         <font>
+            <Font name="Leelawadee UI Bold" size="36.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.5619047619047619">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Button fx:id="BackButton" layoutX="860.0" layoutY="574.0" mnemonicParsing="false" onAction="#BackButtonAction" style="-fx-border-color: blue;" text="Back" />
+      <Label fx:id="nonlabel" layoutX="524.0" layoutY="69.0" prefHeight="17.0" prefWidth="267.0" textFill="BLUE" />
+      <TextArea fx:id="itemText" editable="false" layoutX="208.0" layoutY="152.0" prefHeight="119.0" prefWidth="695.0" />
+      <ComboBox fx:id="viewBy" layoutX="37.0" layoutY="159.0" onAction="#viewbyAct" prefWidth="150.0" promptText="View By" />
+      <TextArea fx:id="itemText1" editable="false" layoutX="201.0" layoutY="312.0" prefHeight="103.0" prefWidth="714.0" />
+      <TextArea fx:id="itemText2" editable="false" layoutX="201.0" layoutY="450.0" prefHeight="103.0" prefWidth="714.0" />
+      <ComboBox fx:id="viewBy1" layoutX="24.0" layoutY="322.0" onAction="#viewby1Act" prefWidth="150.0" promptText="View By" />
+      <ComboBox fx:id="viewBy2" layoutX="24.0" layoutY="450.0" onAction="#viewby2Act" prefWidth="150.0" promptText="View By" />
+   </children>
+</AnchorPane>

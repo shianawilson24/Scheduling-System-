@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="635.0" prefWidth="758.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CustomerToAppController">
+   <children>
+      <Label fx:id="WguLogo" layoutX="24.0" layoutY="24.0" text="WGU">
+         <font>
+            <Font name="Leelawadee UI Bold" size="36.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.5619047619047619">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label fx:id="AppointmentLogo" layoutX="313.0" layoutY="43.0" text="Add Appointment" textFill="BLUE">
+         <font>
+            <Font name="Imprint MT Shadow" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="208.0" layoutY="261.0" text="Title" />
+      <Label layoutX="197.0" layoutY="309.0" text="Location" />
+      <Label layoutX="207.0" layoutY="363.0" text="Type" />
+      <Label layoutX="200.0" layoutY="414.0" text="Description" />
+      <Label layoutX="207.0" layoutY="478.0" text="Date" />
+      <Label layoutX="207.0" layoutY="527.0" text="Start" />
+      <Label layoutX="210.0" layoutY="571.0" text="End" />
+      <TextField fx:id="titleCol" layoutX="320.0" layoutY="257.0" onAction="#titleAct" />
+      <DatePicker fx:id="dateText" editable="false" layoutX="306.0" layoutY="474.0" onAction="#dateTextAction" />
+      <ComboBox fx:id="locationCombo" layoutX="319.0" layoutY="305.0" onAction="#locationComboAction" prefWidth="150.0" />
+      <ComboBox fx:id="startCombo" layoutX="319.0" layoutY="523.0" onAction="#startComboAction" prefWidth="150.0" />
+      <Button fx:id="saveButton" layoutX="552.0" layoutY="589.0" mnemonicParsing="false" onAction="#saveButtonAction" text="Save" />
+      <Button fx:id="cancelButton" layoutX="645.0" layoutY="589.0" mnemonicParsing="false" onAction="#cancelButtonAction" text="Cancel" />
+      <Label fx:id="yourZone" layoutX="166.0" layoutY="611.0" prefHeight="29.0" prefWidth="149.0" />
+      <Label fx:id="customerIDText" layoutX="166.0" layoutY="113.0" prefHeight="25.0" prefWidth="149.0" />
+      <Label fx:id="contactIdLabel" layoutX="446.0" layoutY="571.0" />
+      <Label layoutX="180.0" layoutY="205.0" text=" Contact Name" />
+      <Label fx:id="userIdLabel" layoutX="194.0" layoutY="647.0" prefHeight="17.0" prefWidth="83.0" />
+      <Label fx:id="endLabel" layoutX="316.0" layoutY="567.0" prefHeight="25.0" prefWidth="157.0" />
+      <ComboBox fx:id="typeID" layoutX="324.0" layoutY="359.0" onAction="#typeAct" prefWidth="150.0" />
+      <TextField fx:id="descriptionText" layoutX="320.0" layoutY="419.0" />
+      <TextField fx:id="ContactNameText" layoutX="325.0" layoutY="201.0" />
+      <Label layoutX="174.0" layoutY="117.0" text="CustomerID" />
+      <Label fx:id="customerIdText" layoutX="345.0" layoutY="117.0" prefHeight="17.0" prefWidth="107.0" />
+      <TextField fx:id="emailText" layoutX="320.0" layoutY="157.0" onAction="#emailAct" />
+      <Label layoutX="206.0" layoutY="161.0" text="Email" />
+   </children>
+</AnchorPane>
